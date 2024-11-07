@@ -1,0 +1,32 @@
+/**
+ * Class geometri untuk menghitung luas segitiga.
+ */
+public class geometri {
+
+    /**
+     * Menghitung luas segitiga berdasarkan alas dan tinggi.
+     *
+     * @param alas  
+     * @param tinggi 
+     * @return luas segitiga
+     */
+    public static double hitungLuasSegitiga(double alas, double tinggi) {
+        return 0.5 * alas * tinggi;
+    }
+
+    /**
+     * Main method untuk menjalankan program dan mengetes fungsi hitungLuasSegitiga.
+     *
+     * @param args 
+     */
+    public static void main(String[] args) {
+        double alas = 10.0;
+        double tinggi = 5.0;
+        
+        
+        double luas = hitungLuasSegitiga(alas, tinggi);
+
+        // Menampilkan hasil
+        System.out.println("Luas segitiga dengan alas " + alas + " dan tinggi " + tinggi + " adalah: " + luas);
+    }
+}
